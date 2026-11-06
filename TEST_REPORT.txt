@@ -1,0 +1,21 @@
+Test execution report
+====================
+Command: pytest -q
+Result: 13 passed in 0.12s
+
+Command: python -m compileall -q .
+Result: passed (all Python files compiled)
+
+Default-data smoke test:
+- Microgrids: 5
+- Transactions: 4
+- Energy traded: 50.00 kWh
+- Transaction value: ₹408.75
+- Community external-grid cost before trading: ₹575.00
+- Community external-grid cost after trading: ₹0.00
+- Community operating-cost savings: ₹575.00
+- Finite game profiles enumerated: 243
+- Pure Nash equilibria found by exhaustive calculation: 3
+
+Limitation during environment verification:
+Streamlit is not installed in the provided execution environment, so the web server could not be launched here. Install the listed dependencies with pip install -r requirements.txt and run streamlit run app.py locally. Dashboard dependencies are included in requirements.txt.
